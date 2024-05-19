@@ -1,2 +1,8 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<div class="panel panel-default">
+    <div class="panel-heading">S'inscrire</div>
+    <div class="panel-body">
+        <%=form_for @user, class:"form-horizontal" do |f|%>
+            <%= f.text_field :username%>
+        <%end %>
+    </div>
+</div>
